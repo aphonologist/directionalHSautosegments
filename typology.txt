@@ -1,0 +1,70 @@
+*FL, *FR, DEP(link), MAX(link)
+{('e', 'L', 'e', 'W'), ('e', 'W', 'L', 'e'), ('L', 'e', 'W', 'e')}
+XXFXXX -> LMRXXX
+('XXFXXX', 'XLRXXX', 'LMRXXX', 'LMRXXX')
+XXLRXX -> LMMRXX
+('XXLRXX', 'XLMRXX', 'LMMRXX', 'LMMRXX')
+
+*FL, *FR, DEP(link), MAX(link)
+{('L', 'e', 'W', 'e'), ('e', 'W', 'L', 'L')}
+XXFXXX -> XXXXXX
+('XXFXXX', 'XXXXXX', 'XXXXXX')
+XXLRXX -> LMMRXX
+('XXLRXX', 'XLMRXX', 'LMMRXX', 'LMMRXX')
+
+*FL, *FR, DEP(link), MAX(link)
+{('W', 'e', 'L', 'e'), ('e', 'L', 'e', 'W'), ('L', 'W', 'e', 'e')}
+XXFXXX -> LMMMMR
+('XXFXXX', 'XLRXXX', 'LMRXXX', 'LMMRXX', 'LMMMRX', 'LMMMMR', 'LMMMMR')
+XXLRXX -> LMMMMR
+('XXLRXX', 'XLMRXX', 'LMMRXX', 'LMMMRX', 'LMMMMR', 'LMMMMR')
+
+*FL, *FR, DEP(link), MAX(link)
+{('W', 'e', 'L', 'e'), ('L', 'W', 'e', 'L')}
+XXFXXX -> XXXXXX
+('XXFXXX', 'XXXXXX', 'XXXXXX')
+XXLRXX -> LMMMMR
+('XXLRXX', 'XLMRXX', 'LMMRXX', 'LMMMRX', 'LMMMMR', 'LMMMMR')
+
+*FL, *FR, DEP(link), MAX(link)
+{('W', 'W', 'e', 'L'), ('L', 'L', 'W', 'e')}
+XXFXXX -> XXXXXX
+('XXFXXX', 'XXXXXX', 'XXXXXX')
+XXLRXX -> XXLRXX
+('XXLRXX', 'XXLRXX')
+
+*FL, *FR, DEP(link), MAX(link)
+{('L', 'L', 'W', 'e'), ('L', 'L', 'e', 'W')}
+XXFXXX -> XXFXXX
+('XXFXXX', 'XXFXXX')
+XXLRXX -> XXLRXX
+('XXLRXX', 'XXLRXX')
+
+*FL, *FR, DEP(link), MAX(link)
+{('e', 'W', 'L', 'e'), ('W', 'L', 'e', 'L')}
+XXFXXX -> XXXXXX
+('XXFXXX', 'XXXXXX', 'XXXXXX')
+XXLRXX -> LMMMMR
+('XXLRXX', 'XXLMRX', 'XXLMMR', 'XLMMMR', 'LMMMMR', 'LMMMMR')
+
+*FL, *FR, DEP(link), MAX(link)
+{('L', 'e', 'e', 'W'), ('W', 'L', 'e', 'e'), ('e', 'W', 'L', 'e')}
+XXFXXX -> LMMMMR
+('XXFXXX', 'XXLRXX', 'XXLMRX', 'XXLMMR', 'XLMMMR', 'LMMMMR', 'LMMMMR')
+XXLRXX -> LMMMMR
+('XXLRXX', 'XXLMRX', 'XXLMMR', 'XLMMMR', 'LMMMMR', 'LMMMMR')
+
+*FL, *FR, DEP(link), MAX(link)
+{('e', 'L', 'W', 'e'), ('W', 'e', 'L', 'L')}
+XXFXXX -> XXXXXX
+('XXFXXX', 'XXXXXX', 'XXXXXX')
+XXLRXX -> XXLMMR
+('XXLRXX', 'XXLMRX', 'XXLMMR', 'XXLMMR')
+
+*FL, *FR, DEP(link), MAX(link)
+{('W', 'e', 'L', 'e'), ('L', 'e', 'e', 'W'), ('e', 'L', 'W', 'e')}
+XXFXXX -> XXLMMR
+('XXFXXX', 'XXLRXX', 'XXLMRX', 'XXLMMR', 'XXLMMR')
+XXLRXX -> XXLMMR
+('XXLRXX', 'XXLMRX', 'XXLMMR', 'XXLMMR')
+
