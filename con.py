@@ -27,6 +27,32 @@ class F:
 		if self.direction == 'N': return [sum(loci)]
 		return loci
 
+# AlignL
+# one vio for every segment that seperates leftmost segment from left edge
+class AlignL:
+	def __init__(self):
+		self.name = 'AlignL'
+
+	def vios(self, candidate):
+		loci = [0]
+		for i in range(len(candidate)):
+			if candidate[i] in ['F', 'L']:
+				loci[0] += i
+		return loci
+
+# AlignR
+# one vio for every segment that seperates rightmost segment from right edge
+class AlignR:
+	def __init__(self):
+		self.name = 'AlignR'
+
+	def vios(self, candidate):
+		loci = [0]
+		for i in range(len(candidate)):
+			if candidate[i] in ['F', 'R']:
+				loci[0] += len(candidate) - 1 - i
+		return loci
+
 ### Faithfulness constraints are binary
 
 # Dep(link)

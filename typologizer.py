@@ -20,7 +20,10 @@ urs = ['XXFXXX', 'XXLRXX']
 
 from gen import gen_autoseg as gen
 
-con = [F('L'), F('R'), DepLink(), MaxLink()]
+# directional
+#con = [F('L'), F('R'), DepLink(), MaxLink()]
+# traditional
+con = [AlignL(), AlignR(), DepLink(), MaxLink()]
 
 typology = []
 
